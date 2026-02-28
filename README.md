@@ -10,7 +10,7 @@ Built using **Fake Store API**, **GetX**, **Dio**, **Freezed**, and **Shared Pre
 - 🏠 **Home screen with product grid**
 - 🗂️ **Category filtering** (All, Electronics, Fashion)
 - 🎯 **Collapsible promo banner with sticky tab bar**
-- 🔐 **Login with JWT token authentication**
+- 🔐 **Login with username and password**
 - 👤 **User profile fetched from decoded JWT**
 - 🔄 **Pull-to-refresh on product listings**
 - 🗂️ **State management with GetX**
@@ -46,26 +46,61 @@ cd zavi_mart
 
 ---
 
-### 2️⃣ Install dependencies
+### 2️⃣ Install FVM
 
+If you don't have FVM installed:
+
+```sh
+dart pub global activate fvm
+```
+
+Then install and use the project's Flutter version:
+
+```sh
+fvm install 3.41.1
+fvm use 3.41.1
+```
+
+---
+
+### 3️⃣ Install dependencies
+
+Using FVM:
+```sh
+fvm flutter pub get
+```
+
+Without FVM:
 ```sh
 flutter pub get
 ```
 
 ---
 
-### 3️⃣ Generate Freezed & JSON serialization code
+### 4️⃣ Generate Freezed & JSON serialization code
 
+Using FVM:
 ```sh
-dart run build_runner build --delete-conflicting-outputs
+fvm dart run build_runner build -d
+```
+
+Without FVM:
+```sh
+dart run build_runner build -d
 ```
 
 > ⚠️ This step is **mandatory**. The app will not compile without the generated `.freezed.dart` and `.g.dart` files.
 
 ---
 
-### 4️⃣ Run the project
+### 5️⃣ Run the project
 
+Using FVM:
+```sh
+fvm flutter run
+```
+
+Without FVM:
 ```sh
 flutter run
 ```
@@ -151,4 +186,17 @@ https://fakestoreapi.com
 > The JWT token's `sub` field is decoded client-side to extract the user ID, since the API has no `/users/me` endpoint.
 
 ---
+
+## 📄 License
+
+This project is open-source and free to use.
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. Suggestions and improvements are appreciated!
+
+---
+
 ### ⭐ If you like this project, don't forget to star the repo!
