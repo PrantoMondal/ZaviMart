@@ -66,17 +66,10 @@ class HomeView extends BaseView<HomeController> {
             ),
           ];
         },
-        body: Builder(
-          builder: (context) {
-            final controller = Get.find<HomeController>();
-            return TabBarView(
-              controller: controller.tabController,
-              physics: const PageScrollPhysics(),
-              children: controller.tabs
-                  .map((t) => TabBody(category: t.category))
-                  .toList(),
-            );
-          },
+        body: TabBarView(
+          controller: controller.tabController,
+          physics: const PageScrollPhysics(),
+          children: controller.tabs.map((t) => TabBody(category: t.category)).toList(),
         ),
       ),
     );

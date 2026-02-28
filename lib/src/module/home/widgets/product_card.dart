@@ -58,7 +58,7 @@ class ProductCard extends StatelessWidget {
                   ),
                   const Spacer(),
                   Text(
-                    'Rs. ${product.price?.toStringAsFixed(0) ?? '0'}',
+                    'BDT. ${product.price?.toStringAsFixed(0) ?? '0'}',
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.orange,
