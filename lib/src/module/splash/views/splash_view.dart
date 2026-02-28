@@ -19,7 +19,7 @@ class SplashView extends BaseView<SplashController> {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [AppColors.lightBlue, AppColors.white],
+          colors: [AppColors.primary, AppColors.white],
         ),
       ),
       child: Center(

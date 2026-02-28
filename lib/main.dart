@@ -12,11 +12,10 @@ void main() async {
     appName: packageInfo.appName,
     appVersion: packageInfo.version,
     packageName: packageInfo.packageName,
-    baseUrl: "",
+    baseUrl: "https://fakestoreapi.com/",
   );
 
   BuildConfig.instantiate(config: envConfig);
-  // await dotenv.load(fileName: ".env");
 
   runApp(const Application());
 }

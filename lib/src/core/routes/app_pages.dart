@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:zavi_mart/src/module/auth/bindings/auth_binding.dart';
+import 'package:zavi_mart/src/module/auth/views/login_view.dart';
 import 'package:zavi_mart/src/module/splash/bindings/splash_binding.dart';
 import 'package:zavi_mart/src/module/splash/views/splash_view.dart';
 
@@ -24,5 +26,12 @@ class AppPages {
     //     return HomeView();
     //   },
     // ),
+    GetPage(
+      name: Routes.LOGIN,
+      binding: AuthBinding(),
+      page: () {
+        return LoginView();
+      },
+    ),
   ];
 }

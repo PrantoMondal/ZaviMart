@@ -10,5 +10,9 @@ abstract class AppValues {
   static const double gap_4 = 4;
   static const double container_50 = 50;
   static const double gapXSmall = 8;
+  static const double gapSmall = 12;
+  static const double gapXLarge = 24;
   static const double icon_28 = 28;
+
+  static const double radius_12 = 12;
 }

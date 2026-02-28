@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:zavi_mart/src/core/base/base_controller.dart';
 import 'package:zavi_mart/src/core/routes/app_pages.dart';
-import 'package:zavi_mart/src/core/base/base_controller.dart';
 
 class SplashController extends BaseController {
   SplashController();
@@ -15,6 +14,6 @@ class SplashController extends BaseController {
   Future<void> startApp() async {
     await Future.delayed(const Duration(seconds: 1));
 
-    // Get.offAllNamed(Routes.HOME);
+    Get.offAllNamed(Routes.LOGIN);
   }
 }
