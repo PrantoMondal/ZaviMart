@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:zavi_mart/src/core/constants/app_colors.dart';
+import 'package:zavi_mart/src/core/constants/app_textstyles.dart';
 import 'package:zavi_mart/src/data/model/product_response.dart';
 
 class ProductCard extends StatelessWidget {
@@ -59,11 +61,7 @@ class ProductCard extends StatelessWidget {
                   const Spacer(),
                   Text(
                     'BDT. ${product.price?.toStringAsFixed(0) ?? '0'}',
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.orange,
-                      fontSize: 15,
-                    ),
+                    style: kInter700W16S.copyWith(color: AppColors.primary),
                   ),
                   const SizedBox(height: 4),
                   _StarRating(rate: rate, count: count),

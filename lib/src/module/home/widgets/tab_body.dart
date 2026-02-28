@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:zavi_mart/src/core/constants/app_colors.dart';
 import 'package:zavi_mart/src/core/constants/app_values.dart';
 import 'package:zavi_mart/src/data/model/product_response.dart';
 import 'package:zavi_mart/src/module/home/controllers/home_controller.dart';
@@ -28,13 +29,13 @@ class TabBody extends StatelessWidget {
       if (all.isEmpty) {
         return RefreshIndicator(
           onRefresh: _onRefresh,
-          color: Colors.orange,
+          color: AppColors.primary,
           child: CustomScrollView(
             key: PageStorageKey('tab_$category'),
             physics: const AlwaysScrollableScrollPhysics(),
             slivers: const [
               SliverFillRemaining(
-                child: Center(child: CircularProgressIndicator(color: Colors.orange)),
+                child: Center(child: CircularProgressIndicator(color: AppColors.primary)),
               ),
             ],
           ),
@@ -45,7 +46,7 @@ class TabBody extends StatelessWidget {
 
       return RefreshIndicator(
         onRefresh: _onRefresh,
-        color: Colors.orange,
+        color: AppColors.primary,
         child: CustomScrollView(
           key: PageStorageKey('tab_$category'),
           physics: const AlwaysScrollableScrollPhysics(parent: BouncingScrollPhysics()),
@@ -55,7 +56,7 @@ class TabBody extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'No products in this category.',
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: AppColors.grey),
                   ),
                 ),
               )
