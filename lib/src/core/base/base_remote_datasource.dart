@@ -12,9 +12,9 @@ abstract class BaseRemoteDatasource {
 
   final logger = BuildConfig.instance.envConfig.logger;
 
-  Future<Response<T>> callApi<T>(Future<Response<T>> Function() request) async {
+  Future<Response<T>> callApi<T>(Future<Response<T>> api) async {
     try {
-      final response = await request();
+      final response = await api;
 
       _validateHttpStatus(response);
 
