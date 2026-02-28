@@ -117,6 +117,17 @@ flutter run
 
 ---
 
+## 🔑 Test Credentials
+
+Use any of the following accounts to log in:
+
+| Username | Password |
+|---|---|
+| `johnd` | `m38rmF$` |
+| `mor_2314` | `83r5^_` |
+| `kevinryan` | `kev02937@` |
+---
+
 ## 🧩 Folder Structure
 
 ```
