@@ -187,16 +187,4 @@ https://fakestoreapi.com
 
 ---
 
-## 📄 License
-
-This project is open-source and free to use.
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome. Suggestions and improvements are appreciated!
-
----
-
 ### ⭐ If you like this project, don't forget to star the repo!
