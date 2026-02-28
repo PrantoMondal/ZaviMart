@@ -32,10 +32,11 @@ class AuthService extends GetxService {
     }
   }
 
-  Future<void> loadAccessToken() async {
+  Future<String> loadAccessToken() async {
     try {
       final token = await prefManager.getString(AppStrings.spAccessToken);
       _accessToken.value = token;
+      return token;
     } catch (error, stacktrace) {
       _logger.e(error, stackTrace: stacktrace);
       rethrow;

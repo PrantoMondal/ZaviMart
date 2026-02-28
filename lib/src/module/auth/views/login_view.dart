@@ -11,6 +11,7 @@ import '../controllers/auth_controller.dart';
 
 class LoginView extends BaseView<AuthController> {
   LoginView({super.key});
+
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
     return null;

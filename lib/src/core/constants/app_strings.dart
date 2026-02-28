@@ -6,4 +6,5 @@ abstract class AppStrings {
   static final spAccessToken = "${_config.packageName}.user_access_token";
 
   static const urlLogin = "auth/login";
+  static const urlGetProducts = "products";
 }
