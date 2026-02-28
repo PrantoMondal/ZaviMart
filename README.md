@@ -74,19 +74,10 @@ flutter run
 
 ## 📸 Screenshots
 
-### 🔐 Login
-<div style="display: flex; justify-content: center;">
-  <img src="assets/images/login.png" alt="Login Screen" width="40%" />
-</div>
-
-### 🏠 Home
-<div style="display: flex; justify-content: center;">
-  <img src="assets/images/home.png" alt="Home Screen" width="40%" />
-</div>
-
-### 👤 Profile
-<div style="display: flex; justify-content: center;">
-  <img src="assets/images/profile.png" alt="Profile Screen" width="40%" />
+<div style="display: flex; gap: 10px;">
+  <img src="assets/images/login.png" alt="Login" width="30%" />
+  <img src="assets/images/home.png" alt="Home" width="30%" />
+  <img src="assets/images/profile.png" alt="Profile" width="30%" />
 </div>
 
 ---
@@ -160,17 +151,4 @@ https://fakestoreapi.com
 > The JWT token's `sub` field is decoded client-side to extract the user ID, since the API has no `/users/me` endpoint.
 
 ---
-
-## 📄 License
-
-This project is open-source and free to use.
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome. Suggestions and improvements are appreciated!
-
----
-
 ### ⭐ If you like this project, don't forget to star the repo!
