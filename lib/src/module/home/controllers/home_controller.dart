@@ -33,6 +33,7 @@ class HomeController extends BaseController with GetTickerProviderStateMixin {
   void getProducts() async {
     isLoading.value = true;
     callDataService(
+      showLoadingStatus: false,
       remoteDatasource.getProducts(),
       onSuccess: (response) {
         isLoading.value = false;

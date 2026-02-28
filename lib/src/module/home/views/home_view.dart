@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:zavi_mart/src/core/base/base_view.dart';
 import 'package:zavi_mart/src/core/constants/app_colors.dart';
 import 'package:zavi_mart/src/core/constants/app_textstyles.dart';
+import 'package:zavi_mart/src/core/routes/app_pages.dart';
 import 'package:zavi_mart/src/module/home/controllers/home_controller.dart';
 import 'package:zavi_mart/src/module/home/widgets/home_tab_bar_delegate.dart';
 import 'package:zavi_mart/src/module/home/widgets/promo_banner.dart';
@@ -18,7 +19,9 @@ class HomeView extends BaseView<HomeController> {
       title: Text('Zavi Mart', style: kInter700W24S.copyWith(color: AppColors.white)),
       actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.toNamed(Routes.PROFILE);
+          },
           icon: Container(
             padding: const EdgeInsets.all(4.0),
             decoration: BoxDecoration(

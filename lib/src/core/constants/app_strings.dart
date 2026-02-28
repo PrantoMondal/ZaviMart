@@ -7,4 +7,5 @@ abstract class AppStrings {
 
   static const urlLogin = "auth/login";
   static const urlGetProducts = "products";
+  static const urlGetUser = "users";
 }
