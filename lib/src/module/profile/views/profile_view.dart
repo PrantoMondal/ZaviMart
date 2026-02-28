@@ -23,6 +23,14 @@ class ProfileView extends BaseView<ProfileController> {
           fontWeight: FontWeight.w600,
         ),
       ),
+      actions: [
+        IconButton(
+          onPressed: () {
+            controller.logout();
+          },
+          icon: const Icon(Icons.logout),
+        ),
+      ],
     );
   }
 
@@ -32,7 +40,7 @@ class ProfileView extends BaseView<ProfileController> {
       final user = controller.user.value;
 
       if (user == null) {
-        return const Center(child: CircularProgressIndicator());
+        return const SizedBox();
       }
 
       return SingleChildScrollView(

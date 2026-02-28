@@ -37,4 +37,8 @@ class ProfileController extends BaseController {
     final decoded = utf8.decode(base64Url.decode(normalized));
     return jsonDecode(decoded)['sub'] as int;
   }
+
+  void logout() {
+    authService.logout();
+  }
 }

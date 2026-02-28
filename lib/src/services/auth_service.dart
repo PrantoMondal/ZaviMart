@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:zavi_mart/src/core/config/build_config.dart';
 import 'package:zavi_mart/src/core/constants/app_strings.dart';
+import 'package:zavi_mart/src/core/routes/app_pages.dart';
 import 'package:zavi_mart/src/data/local/preference_manager.dart';
 
 class AuthService extends GetxService {
@@ -56,6 +57,7 @@ class AuthService extends GetxService {
   Future<void> logout() async {
     try {
       await clearAccessToken();
+      Get.offAllNamed(Routes.LOGIN);
     } catch (error, stacktrace) {
       _logger.e(error, stackTrace: stacktrace);
       rethrow;
